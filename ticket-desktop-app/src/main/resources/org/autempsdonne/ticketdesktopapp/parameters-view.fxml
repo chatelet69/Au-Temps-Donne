@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="org.autempsdonne.ticketdesktopapp.viewsControllers.ParametersController"
+            prefHeight="400.0" prefWidth="600.0">
+
+    <fx:include
+            prefWidth="100.0"
+            AnchorPane.leftAnchor="0.0"
+            AnchorPane.bottomAnchor="0.0"
+            AnchorPane.topAnchor="0.0"
+            source="menu.fxml"
+    />
+
+    <AnchorPane AnchorPane.leftAnchor="200.0">
+        <Label text="Paramètres" alignment="CENTER" />
+    </AnchorPane>
+
+</AnchorPane>

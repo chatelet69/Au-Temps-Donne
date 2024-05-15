@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+config.json
+uploads
+.env
+docker-compose.*
+languages/*
+!languages/FR.json

@@ -1,0 +1,89 @@
+version: '3'
+services:
+  db_dev:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_PWD_DEV}
+      MARIADB_USER: ${DB_USER_DEV}
+      MARIADB_PASSWORD: ${DB_USER_PWD_DEV}
+      MYSQL_DATABASE: autempsdonne_dev
+    volumes:
+      - ./db/data_dev:/var/lib/mysql
+      - ./db/init_db_dev.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - 3307:3306
+    container_name: db_dev
+    networks:
+      - atddev
+
+  atd-api-dev:
+    depends_on:
+      - db_dev
+    restart: always
+    environment:
+      - DB_HOST=${DB_HOST_DEV}
+      - DB_USER=${DB_USER_DEV}
+      - DB_PWD=${DB_USER_PWD_DEV}
+      - DB_DATABASE=autempsdonne_dev
+    volumes:
+      - ./atd-api/languages/:/app/languages
+      - ./atd-api/src/:/app/src
+      - ./atd-api/index.js:/app/index.js
+      - ./atd-api/config.json:/app/config.json
+      - ./atd-api/.env:/app/.env
+    ports:
+      - 8088:8081
+    container_name: api_dev
+    build:
+      context: atd-api
+      dockerfile: Dockerfile.dev
+    networks:
+      - atddev
+
+  back-office-dev:
+    depends_on:
+      - atd-api-dev
+    restart: always
+    ports:
+      - 8087:3000
+    volumes:
+      - ./web/back-office/public:/app/public
+      - ./web/back-office/src:/app/src
+      - ./web/back-office/default.conf:/app/default.conf
+    container_name: back-office_dev
+    build:
+          context: ./web/back-office
+          dockerfile: Dockerfile.dev  
+
+  front-office-dev:
+    restart: always
+    depends_on:
+        - atd-api-dev
+    volumes:
+      - ./web/front-office/public:/app/public
+      - ./web/front-office/src:/app/src
+      - ./web/front-office/default.conf:/app/default.conf
+    ports:
+      - 8086:3000
+    container_name: front-office_dev
+    build:
+      context: ./web/front-office
+      dockerfile: Dockerfile.dev
+  
+  warehouse-dev:
+    restart: always
+    depends_on:
+          - atd-api-dev
+    ports:
+      - 8085:3000
+    volumes:
+      - ./web/warehouse/public:/app/public
+      - ./web/warehouse/src:/app/src
+      - ./web/warehouse/default.conf:/app/default.conf
+    container_name: warehouse_dev
+    build:
+      context: ./web/warehouse
+      dockerfile: Dockerfile.dev
+networks:
+  atddev:

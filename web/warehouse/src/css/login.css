@@ -1,0 +1,110 @@
+.Login-page{
+    height: 100vh;
+    background-color: #507DBC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+#loginBoxContainer {
+    background-color: white;
+    padding: 2%;
+    min-width: 25vw;
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-header-box h2 {
+    text-align: center;
+    font-family: "Akshar", sans-serif;
+    margin-bottom: 1vh;
+}
+
+.login-header-box img {
+    width: 3vw;
+    scale: 275%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form * {
+    margin-bottom: 1.5vh;
+    border-radius: 8px;
+}
+
+.login-form input, button {
+    border: none;
+    padding: 0.5vw;
+}
+
+.login-form input {
+    color: #646464;
+    width: 15vw;
+    padding: 10px;
+    background-color: #E6E6E6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.login-form button {
+    background-color: #A1C6E4;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.login-form a {
+    text-align: center;
+}
+
+#loginFailed {
+    display: none;
+    color: red;
+}
+
+/* Forget password */
+
+#forgetPasswordBox {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#forgetPasswordBox * {
+    margin-bottom: 2vh;
+}
+
+#forgetPasswordBox input {
+    background-color: #FFFFFF;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+#forgetPasswordBox h5 {
+    margin-top: 0;
+    font-family: "Akshar", sans-serif;
+    font-weight: normal;
+    font-size: medium;
+}
+
+/* Logout */
+
+.logout-body {
+    background-color: #507DBC;
+    text-align: center;
+}
+
+.Logout-page img {
+    width: 15vw;
+}
+
+.Logout-page h1 {
+    font-size: xx-large;
+}

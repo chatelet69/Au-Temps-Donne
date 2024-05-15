@@ -1,0 +1,86 @@
+version: '3'
+services:
+  db_prod:
+    image: mariadb:latest
+    restart: always
+    environment:
+      MARIADB_ROOT_PASSWORD: ${DB_PWD_PROD}
+      MARIADB_USER: ${DB_USER_PROD}
+      MARIADB_PASSWORD: ${DB_USER_PWD_PROD}
+      MYSQL_DATABASE: autempsdonne
+    volumes:
+      - ./db/data_prod:/var/lib/mysql
+      - ./db/init_db.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - ${PORT_DB_PROD}
+    container_name: db_prod
+    networks:
+      - atdprod
+
+  atd-api-prod:
+    depends_on:
+      - db_prod
+    restart: always
+    environment:
+      - DB_HOST=${DB_HOST_PROD}
+      - DB_USER=${DB_USER_PROD}
+      - DB_PWD=${DB_USER_PWD_PROD}
+      - DB_DATABASE=autempsdonne
+    volumes:
+      - ./atd-api/languages/:/app/languages
+      - ./atd-api/src/:/app/src
+      - ./atd-api/index.js:/app/index.js
+      - ./atd-api/config.json:/app/config.json
+      - ./atd-api/.env:/app/.env
+    ports:
+      - ${PORT_API_PROD}
+    container_name: api_prod
+    build:
+      context: atd-api
+      dockerfile: Dockerfile.prod
+    networks:
+      - atdprod
+
+  back-office-prod:
+    depends_on:
+      - atd-api-prod
+    restart: always
+    volumes:
+      - ./web/back-office/default.conf:/etc/nginx/conf.d/default.conf
+      - ./web/back-office/build/:/usr/share/nginx/html
+    ports:
+      - ${PORT_BACKOFFICE_PROD}
+    container_name: back-office_prod
+    build:
+      context: ./web/back-office
+      dockerfile: Dockerfile.prod  
+
+  front-office-prod:
+    restart: always
+    depends_on:
+        - atd-api-prod
+    ports:
+      - ${PORT_FRONTOFFICE_PROD}
+    volumes:
+      - ./web/front-office/default.conf:/etc/nginx/conf.d/default.conf
+      - ./web/front-office/build/:/usr/share/nginx/html
+    container_name: front-office_prod
+    build:
+      context: ./web/front-office
+      dockerfile: Dockerfile.prod  
+
+  warehouse-prod:
+    restart: always
+    depends_on:
+          - atd-api-prod
+    ports:
+      - ${PORT_WAREHOUSE_PROD}
+    volumes:
+      - ./web/warehouse/default.conf:/etc/nginx/conf.d/default.conf
+      - ./web/warehouse/build/:/usr/share/nginx/html
+    container_name: warehouse_prod
+    build:
+      context: ./web/warehouse
+      dockerfile: Dockerfile.prod  
+networks:
+  atdprod:

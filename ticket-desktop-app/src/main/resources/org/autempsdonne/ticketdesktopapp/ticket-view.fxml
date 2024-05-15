@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.net.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<AnchorPane minHeight="520.0" minWidth="760.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.autempsdonne.ticketdesktopapp.viewsControllers.TicketViewController">
+    <stylesheets>
+        <URL value="@css/ticket-view.css"/>
+    </stylesheets>
+    <fx:include source="menu.fxml" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                AnchorPane.topAnchor="0.0"/>
+
+    <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="200.0" AnchorPane.rightAnchor="0.0"
+                AnchorPane.topAnchor="0.0">
+        <AnchorPane prefHeight="200.0" prefWidth="200.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="10.0">
+            <HBox prefHeight="100.0" prefWidth="200.0">
+                <Button alignment="TOP_LEFT" onAction="#goBackToMenuFromTicket"
+                        styleClass="go-back-dashboard-button" text="Revenir au dashboard"/>
+            </HBox>
+        </AnchorPane>
+
+        <HBox spacing="8.0" styleClass="ticket-infos-container" AnchorPane.leftAnchor="15.0"
+              AnchorPane.topAnchor="55.0">
+            <VBox alignment="CENTER" spacing="4.0">
+                <Label styleClass="ticket-info-type-text" text="Titre du ticket"/>
+                <Label fx:id="ticketTitleText" alignment="CENTER" styleClass="ticket-info-value-text"
+                       text="Titre vide"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="4.0">
+                <Label styleClass="ticket-info-type-text" text="Description"/>
+                <Label fx:id="ticketDescriptionText" alignment="CENTER" styleClass="ticket-info-value-text"
+                       text="Description vide"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="4.0">
+                <Label styleClass="ticket-info-type-text" text="Date de création"/>
+                <Label fx:id="ticketDateText" alignment="CENTER" styleClass="ticket-info-value-text"
+                       text="Pas de date"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="4.0">
+                <Label styleClass="ticket-info-type-text" text="Catégorie"/>
+                <Label fx:id="ticketCategoryText" alignment="CENTER" styleClass="ticket-info-value-text"
+                       text="Pas de catégorie"/>
+            </VBox>
+
+            <VBox alignment="CENTER" spacing="4.0">
+                <Label styleClass="ticket-info-type-text" text="Statut"/>
+                <Label fx:id="ticketCategoryStatus" alignment="CENTER" styleClass="ticket-info-value-text"
+                       text="Pas de statut"/>
+            </VBox>
+        </HBox>
+
+        <HBox alignment="TOP_CENTER" spacing="10.0" AnchorPane.leftAnchor="15.0" AnchorPane.topAnchor="125.0">
+            <VBox>
+                <Label text="Changer la priorité"/>
+                <HBox spacing="4.0">
+                    <ComboBox fx:id="difficultyTicketComboBox" minWidth="100"
+                              styleClass="difficulty-ticket-combobox"/>
+                    <Button onAction="#saveNewDifficultyAction" styleClass="save-new-difficulty-button"
+                            text="Enregistrer"/>
+                </HBox>
+            </VBox>
+
+            <VBox>
+                <Label text="Changer le statut"/>
+                <Button fx:id="changeStatusButton" onAction="#changeStatusTicketAction"
+                        styleClass="change-ticket-status-button" text="Résoudre le ticket"/>
+            </VBox>
+        </HBox>
+
+        <VBox alignment="TOP_CENTER" spacing="10.0" styleClass="ticket-chat-global-container"
+              AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="200.0">
+            <Label alignment="CENTER" styleClass="ticket-chat-text-title" text="Chat du ticket" textFill="white"/>
+
+            <ScrollPane styleClass="ticket-chat-scrollpane" prefWidth="750.0">
+                <VBox fx:id="ticketChatContainer" spacing="5.0" styleClass="ticket-chat-container">
+                    <Label fx:id="noMessageInTicketChat" text="Pas de message !"/>
+                </VBox>
+            </ScrollPane>
+
+            <HBox alignment="CENTER" styleClass="chat-actions-inputs-container" AnchorPane.leftAnchor="25.0">
+                <Label fx:id="fileNameSelected"/>
+                <Button onAction="#uploadFileToSendAction" styleClass="chat-button-action" text="+Fichier">
+                    <HBox.margin>
+                        <Insets right="50.0"/>
+                    </HBox.margin>
+                </Button>
+
+                <TextField fx:id="chatMessageTextField" minWidth="240.0"
+                           promptText="Envoyer un message (255 caractères max)" styleClass="chat-message-input">
+                    <HBox.margin>
+                        <Insets bottom="5.0"/>
+                    </HBox.margin>
+                </TextField>
+
+                <Button alignment="CENTER_RIGHT" onAction="#sendMessageTicketChatAction"
+                        styleClass="chat-button-action" text="Envoyer">
+                    <HBox.margin>
+                        <Insets left="50.0"/>
+                    </HBox.margin>
+                </Button>
+            </HBox>
+        </VBox>
+    </AnchorPane>
+</AnchorPane>

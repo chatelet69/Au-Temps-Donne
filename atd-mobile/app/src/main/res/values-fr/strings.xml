@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name" translatable="false">Au Temps donné</string>
+    <string name="au_temps_donne">AU TEMPS DONNÉ</string>
+    <string name="mobile_software">Logiciel Mobile</string>
+    <string name="email_or_username">E-mail ou nom d\'utilisateur :</string>
+    <string name="password">Mot de passe :</string>
+    <string name="stay_connected">Rester connecté</string>
+    <string name="login">Connexion</string>
+    <string name="open_nav">Ouvrir le tiroir de navigation</string>
+    <string name="close_nav">Fermer le tiroir de navigation</string>
+    <string name="home">Accueil</string>
+    <string name="stock">Stock</string>
+    <string name="harvest">Récolte</string>
+    <string name="ederly">Personnes âgées</string>
+    <string name="logout">Déconnexion</string>
+    <string name="hello_blank_fragment">Bonjour fragment vide</string>
+    <string name="quantit">Quantité</string>
+    <string name="code_barre">Code-barres</string>
+    <string name="expiration_date">Date d\'expiration</string>
+    <string name="category">Catégorie</string>
+    <string name="type">Type</string>
+    <string name="collect">Collecter</string>
+    <string name="add_the_product">Ajouter le produit</string>
+    <string name="you_can_connect_the_nfc_token">Vous pouvez connecter le jeton NFC</string>
+    <string name="recept_the_product">Réceptionner le produit</string>
+    <string name="barcode">Code-barres</string>
+    <string name="location">Emplacement</string>
+    <string name="warehouse">Entrepôt</string>
+    <string name="scan_the_nfc_token">Scanner le jeton NFC</string>
+    <string name="select_a_user_and_scan_the_nfc">Sélectionnez un utilisateur et scannez le NFC</string>
+    <string name="what_do_you_want_to_do">Que voulez-vous faire ?</string>
+    <string name="assign_an_nfc_token">Attribuer un jeton NFC</string>
+    <string name="scan_an_nfc_token">Scanner un jeton NFC</string>
+    <string name="act_on_the_food_harvest">Agir sur la récolte alimentaire :</string>
+    <string name="are_you_collecting_the_products_or_storing_them">Collectez-vous les produits ou les stockez-vous ?</string>
+    <string name="i_m_collecting">Je collecte</string>
+    <string name="i_m_storing">Je stocke</string>
+</resources>

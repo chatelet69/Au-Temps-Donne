@@ -1,0 +1,22 @@
+version: "3"
+
+services:
+  minio_serv:
+    image: quay.io/minio/minio:latest
+    container_name: minio_serv_container
+    deploy:
+      resources:
+        limits:
+          memory: "450M"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+    # Adapter les volumes si besoin (en fonction de ceux existants ou non)
+      # envoyer le dossier des certificats que si vous les envoyez pas dans le docker file
+      #- chemin/certificats/domaine/:/certs  # /etc/letsencrypt/live/domaine.com/ par exemple
+      - chemin/volume/data:/mnt/data
+      - /etc/default/minio:/etc/config.env
+      - /var/lib/docker/volumes/PATH/_data:/mnt/data
+    environment:
+      MINIO_CONFIG_ENV_FILE: /etc/config.env

@@ -1,0 +1,105 @@
+.volunteerPartCarousel{
+    background-image: url("../assets/assoImage-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.partnerPartCarousel{
+    background-image: url("../assets/devenirFournisseur.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.beneficiaryPartCarousel{
+    background-image: url("../assets/personnesagees.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.carouselItem .carouselMarginLeft{
+    margin-left: 5vw;
+}
+.carouselBtns{
+    margin-top: 1.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.slick-dots{
+    position: absolute;
+    bottom: 1vw !important;
+}
+.slick-dots li button::before{
+    color: white !important;
+    font-size: 8px;
+}
+.slick-dots li.slick-active button::before{
+    color: white !important;
+    border: white 1px solid !important;
+    border-radius: 100%;
+    font-size: 8px;
+}
+.slick-arrow{
+    display: none !important;
+}
+.carouselItem{
+    position: relative;
+    height: 91vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: white;
+    font-family: "Akshar", sans-serif;
+}
+.carouselItem h1{
+    font-weight: bold;
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+    color: white;
+}
+.carouselItem h1{
+    font-size: 3vw;
+    margin-bottom: 1.5vw;
+}
+.carouselDesc{
+    color: white;
+    font-size: 1.3vw;
+    max-width: 40vw;
+}
+.carouselBtns *{
+    margin-right: 1.5vw;
+}
+.btnCarousel{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    padding: 1vw;
+    cursor: pointer;
+    transition: 0.5s;
+    font-weight: bold;
+}
+
+.btnPartenaires{
+    background-color: #A1C6EA;
+}
+
+.btnBeneficiary{
+    background-color: #FFB932;
+}
+.btnCarousel:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transition: 0.5s;
+}
+.btnVolunteer{
+    background-color: palegreen;
+}
+
+.slick-arrow{
+    right: 0;
+}

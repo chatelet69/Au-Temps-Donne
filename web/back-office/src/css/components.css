@@ -1,0 +1,1106 @@
+/* Main Module */
+
+.main-module-container {
+    background-color: transparent;
+    padding: 0;
+    margin-right: 3vw;
+}
+
+.global-planning-container {
+    color: var(--text-color-back-modules);
+    background-color: var(--back-color-global-planning-container);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 8px;
+    padding: 6px;
+}
+
+.global-planning-container h3 {
+    text-align: center;
+}
+
+#globalPlanningHead {
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color-back-modules);
+}
+
+#globalPlanningHead h3 {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#globalPlanningHead span:hover, .arrow-button:hover {
+    cursor: pointer;
+}
+
+/* Loading / Loading Calendar Box */
+
+.loading-box {
+    justify-content: center;
+    align-items: center;
+}
+
+.loading-planning-box { width: 80vw; }
+
+@keyframes rotate-icon {
+    from { transform: rotate(360deg); }
+    to { transform: rotate(0deg); }
+}
+
+/* Calendar */
+
+#globalPlanningCalendar {
+    align-items: center;
+    padding: 5px;
+    justify-content: center;
+}
+
+.global-planning-hours ul {
+    text-decoration: none;
+    text-align: right;
+    list-style-type: none;
+}
+
+.global-planning-volunteers {
+    max-width: 85vw;
+    /*min-width: 80vw;*/
+}
+
+.react-calendar-timeline .rct-scroll{
+    overflow-x: hidden !important;
+}
+
+.react-calendar-timeline .rct-dateHeader {
+    background-color: var(--back-color-global-planning-container) !important;
+}
+
+/* Side informations */
+
+.side-informations-container {
+    justify-content: space-around;
+    margin-top: 10px;
+    color: var(--text-color-back-modules);
+}
+
+.side-information-box {
+    border-radius: 8px;
+    /*border: 2px solid gray;*/
+    margin: 5px;
+    padding: 8px;
+    max-width: 33%;
+}
+
+.side-information-box .side-informations-title {
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+
+@media only screen and (max-height: 668px) {
+    .side-informations-container {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .side-informations-container .side-information-box {
+        max-width: 95vw;
+    }
+}
+
+/* Events Module */
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+.requestDetailBox{
+    margin-top: 16px;
+    padding: 8px;
+    background-color: white;
+    border-radius: 4px;
+    min-height: 60vh;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    position: relative;
+}
+.btnBox{
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.requestDetailContent{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 48px;
+}
+.requestDetailContent > div{
+    width: 48%;
+    height: 100%;
+}
+.requestDetailContent > div h3{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+.boxInfoRequest{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.boxInfoRequest h4{
+    font-family: 'Bebas Neue', sans-serif;
+    margin-right: 16px;
+}
+.boxInfoRequest * {
+    font-size: 20px;
+}
+.popUpBox{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30vw;
+    height: 15vh;
+    background-color: white;
+    outline: 999em solid rgba(0, 0, 0, 0.25);
+}
+/*.events-module-container {
+    max-width: 85vw;
+}*/
+
+/*.event-informations-container {}*/
+
+#createNewEventButtonAction {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#createNewEventButtonAction:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+@media only screen and (max-height: 668px) {
+    .events-grid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Events Create popup */
+
+#createNewEventPopup {
+    min-width: 50vw;
+}
+
+.module-popup h3, .action-popup-result-text {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: larger;
+}
+
+.module-popup button {
+    margin-top: 1vh;
+}
+
+.event-create-form {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.event-options-container .event-option-box {
+    margin: 8px;
+    align-items: center;
+}
+
+.event-create-form input, .event-create-form select, .select-input {
+    margin: 4px;
+    padding: 8px;
+    width: fit-content;
+    border-radius: 4px;
+    border: 1px solid gray;
+}
+
+.event-create-contributors-container {
+    justify-content: center;
+    align-items: center;
+}
+
+.event-option-content-container {
+    border: 2px solid gray;
+    border-radius: 8px;
+    max-height: 18vh;
+    padding: 8px;
+    /*min-width: 24vw;*/
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.event-option-add-button {
+    background-color: rgb(136, 143, 128);
+    padding: 10px;
+    color: white;
+    max-width: 16vw;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.event-create-contributors-container #addContributorToEventButton:hover {
+    background-color: rgb(98, 102, 94);
+}
+
+.delete-contributor-button {
+    background-color: transparent;
+    color: red;
+    font-size: 14px;
+    padding: 0;
+    margin: 8px;
+}
+
+.event-create-inputs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.event-road-point-inputs-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 25vw;
+}
+
+.event-infos-action-buttons-container {
+    margin-top: 4px;
+}
+
+.event-infos-action-buttons-container button {
+    margin-left: 12px;
+    padding: 8px;
+    color: white;
+    font-size: 2vh;
+}
+
+.popup-buttons-box, #accessUserPopupButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-buttons-box { flex-direction: row; }
+
+#accessUserPopupButtons { flex-direction: column; }
+
+.popup-buttons-box div {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+}
+
+.error-message-alert, #forgotValuesNewEvent {
+    text-align: center;
+    color: red;
+}
+
+#forgotValuesNewEvent {
+    display: none;
+}
+
+.popup-buttons-box button, .myaccount-buttons-container button {
+    margin: 6px;
+    transition: all 0.4s ease-in-out;
+    padding: 10px;
+    width: 50%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.event-road-point-box {
+    border: 2px solid gray;
+    margin-top: 6px;
+    border-radius: 6px;
+}
+
+#managersDataList { background-color: white; }
+
+#managersDataList option {
+    background-color: white;
+    padding: 4px;
+}
+
+.popup-buttons-box button:hover { cursor: pointer; }
+
+@media only screen and (max-height: 668px) {
+    .event-create-inputs-container {
+        flex-wrap: wrap;
+    }
+    .event-create-form input {
+        padding: 4px;
+    }
+}
+
+/* Event View Detail */
+
+.event-informations-section { justify-content: start; }
+
+#eventIdBadValue { text-align: center; }
+
+.event-informations-container .event-informations-box {
+    margin: 10px;
+    padding: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--back-color-my-account-module);
+}
+
+.event-info-box { 
+    margin: 6px; 
+}
+
+.event-itinerary-list {
+    padding: 12px;
+    padding-left: 15px;
+    margin-left: 15px;
+    width: 25vw;
+    max-height: 14vh;
+    overflow-y: auto;
+}
+
+.contributors-list-container {
+    padding: 12px !important;
+}
+
+.contributors-list-container .gridjs-table .gridjs-thead,
+.contributors-list-container .gridjs-tbody,
+.contributors-list-container .gridjs *,
+.contributors-list-container .gridjs ::after,
+.contributors-list-container .gridjs ::before {
+    max-width: 50vw;
+}
+
+.register-event-status-text {
+    background-color: rgb(155, 155, 155);
+    padding: 6px;
+    color: white;
+}
+
+.event-info-title {
+    inline-size: 15vw;
+}
+
+.event-info-description {
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+    max-width: 15vw;
+    max-height: 10vh;
+}
+
+/* Event Stock */
+
+#stockEventPopup { min-width: 75%; }
+
+.remove-stock-button:hover, .edit-stock-button:hover { cursor: pointer; }
+
+/* User Management Module */
+
+.button-module {
+    padding: 12px;
+    background-color: var(--background-color-back-modules);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.create-new-action-button:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+#usersTypeViewSelect:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+/*#contributorsGridBox {
+    max-width: 35vw;
+}*/
+
+
+#loadingGif{
+    width: 16px;
+}
+#addLanguagePopUp h4{
+    text-align: center;
+    margin-bottom: 16px;
+}
+#addLanguagePopUp{
+    outline: rgba(0, 0, 0, 0.50) 999em solid;
+}
+.displayNone{
+    display: none;
+}
+
+/* User Access Popup */
+
+.user-informations-section {
+    margin-bottom: 1vh;
+}
+
+.user-pfp-section, .user-files-section {
+    border-radius: 8px;
+    padding: 8px;
+    text-align: center;
+    margin: 5px;
+}
+
+.user-files-section {
+    border: 1px solid gray;
+}
+
+.user-pfp-section img {
+    margin-top: 5px;
+    width: 10vw;
+}
+
+.user-informations-under-section, .myaccount-informations-boxs-container {
+    justify-content: center;
+    margin-bottom: 2vh;
+}
+
+.user-infos-box {
+    display: flex;
+    flex-direction: column;
+    margin: 6px;
+}
+
+.address-box { width: 45%; }
+
+.notifications-box, .newsletter-box { width: 20%; }
+
+.user-informations-under-section .id-box {
+    width: 20%;
+    text-align: center;
+}
+
+.user-informations-under-section input, .user-informations-under-section select, .user-informations-under-section h6 {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+
+.user-informations-under-section h6 {
+    font-size: small;
+    font-weight: 500;
+}
+
+.user-informations-under-section input, .user-informations-under-section select {
+    padding: 8px;
+    border-radius: 6px;
+    background-color: rgb(245, 245, 245);
+    border: 1px solid rgb(155, 155, 155);
+}
+
+.user-files-container {
+    min-width: 12vw;
+    padding: 8px;
+    max-height: 35vh;
+    overflow-y: auto;
+}
+
+.user-file-box-container {
+    justify-content: space-around;
+    background-color: var(--back-color-my-account-files);
+    border-radius: 6px;
+    padding: 4px;
+    align-items: center;
+    margin-bottom: 6px;
+    color: var(--text-color-back-modules);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.delete-user-file-button {
+    background-color: transparent;
+    color: red;
+    font-size: large;
+    padding: 0;
+}
+
+.user-file-box { justify-content: start; }
+
+.user-file-box p { font-size: small; }
+
+.user-file-box .user-file-link {
+    color: #7f97af;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+    font-size: medium;
+    background-color: transparent;
+    width: fit-content;
+    margin: 4px;
+    padding: 0;
+}
+
+.user-file-actions-box * { margin: 4px; }
+
+.user-file-box .user-file-link:hover { 
+    cursor: pointer;
+    color: #415e7b;
+}
+
+/* Forbidden Popup */
+
+#ForbiddenPopup { text-align: center; }
+
+#ForbiddenPopup h4 { font-size: larger; }
+
+#ForbiddenPopup button {
+    background-color: rgb(234, 93, 93);
+    padding: 10px;
+    border: none;
+    font-size: medium;
+    border-radius: 4px;
+    color: white;
+}
+
+.action-result-popup {
+    width: max-content;
+}
+
+/* My Account Module */
+
+.myaccount-sections-container {
+    margin-bottom: 10px;
+}
+
+.myaccount-sections-container, .myaccount-buttons-container, .myaccount-buttons-container button { 
+    transition: all 0.5s ease-in-out;
+    justify-content: space-between;
+}
+
+.myaccount-section {
+    margin: 0 10px 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: var(--back-color-my-account-module);
+}
+
+.myaccount-informations-section { justify-content: space-around; }
+
+.myaccount-section .title-section { text-align: center; }
+
+.myaccount-pfp-section .myaccount-pfp-img {
+    width: 12vw;
+    margin: 8px;
+}
+
+.myaccount-editable-infos-box {
+    padding: 6px;
+    margin: 6px;
+}
+
+.myaccount-button {
+    padding: 12px;
+    background-color: var(--back-color-my-account-buttons);
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.myaccount-editable-infos-box h5 {
+    color: var(--text-color-back-modules);
+    font-weight: var(--text-my-account-font-weight);
+}
+
+.myaccount-editable-infos-box input, .event-info-box input {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+input[name="rank"] { color: #dc143c; }
+
+#myAccountSaveEditButton {
+    justify-content: end;
+}
+
+#changeMyPfpPopup, #changeMyPfpPopup input {
+    padding: 16px;
+}
+
+#changeMyPfpPopup input {
+    border: 2px dashed gray;
+    border-radius: 8px;
+    margin: 16px;
+}
+
+#changeMyPfpPopup button { 
+    color: white; 
+    padding: 10px;
+}
+
+.myaccount-planning-action-buttons-container {
+    width: fit-content;
+}
+
+.my-planning {
+    width: 86vw;
+}
+
+.dispo-type-inputs { margin-top: 5px; }
+
+.search-planning-element-box {
+    text-align: center;
+}
+
+.search-planning-element-box h5 { font-weight: 550; }
+
+.search-input-a {
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding: 4px;
+    transition: all ease-in-out 0.2s;
+}
+
+.search-input-a:focus {
+    border-color: #0D1A30;
+}
+
+.filters-checkbox-options-container {
+    border: 2px dashed gray;
+    padding: 8px;
+    max-width: 14vw;
+    text-align: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.formation-details-container {
+    padding: 8px;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+.formation-under-container {
+    margin: 12px;
+}
+
+.formation-description-container {
+    border: 4px solid #0D1A30;
+    padding: 8px;
+}
+
+.formation-infos-container {
+    justify-content: space-between ;
+    flex-wrap: wrap;
+    max-width: 50vw;
+}
+
+.formation-global {
+    padding: 2px;
+    margin-bottom: 2vh;
+}
+
+.formation-signed-users-container {
+    border: 2px solid violet;
+    padding: 4px;
+}
+
+.formation-detail-box{
+    border: 4px solid #0D1A30;
+    width: 150px;
+    height: 75px;
+    margin-bottom: 10px;
+}
+
+#buttonRegistered {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#buttonRegistered:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+#showRegistered {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#showRegistered:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+#button-register:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+#button-register {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.planning-found-container {
+    max-height: 24vh;
+    overflow: auto;
+    padding: 4px;
+}
+
+.planning-editable-box {
+    margin-bottom: 4px;
+    margin-top: 4px;
+    padding: 6px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 8px;
+}
+
+.action-buttons-planning-edit button {
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.myaccount-files-container {
+    max-height: 40vh;
+    overflow-y: auto;
+    padding: 8px;
+}
+
+@media only screen and (max-width: 1000px) {
+    .myaccount-pfp-section { flex-direction: row; }
+    .myaccount-pfp-section .myaccount-pfp-img { width: 20vw; }
+
+    .myaccount-sections-container, .myaccount-buttons-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .myaccount-buttons-container button { 
+        width: fit-content;
+        margin: 0 0 6px 0;
+    }
+}
+
+@media only screen and (max-height: 668px) and (max-width: 376px) {
+    .myaccount-pfp-section, .my-account-pfp-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90vw;
+    }
+
+    .myaccount-pfp-section .myaccount-pfp-img { width: 30vw; }
+    
+    .myaccount-buttons-container { flex-direction: row; }
+    .myaccount-buttons-container button { margin: 6px; }
+
+    .myaccount-section { margin-bottom: 8px; }
+
+    .user-informations-under-section, .myaccount-informations-boxs-container { 
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .user-file-box .user-file-link { font-size: 2vh; }
+}
+
+@media screen and (min-width: 1480px) and (min-height: 968px) {
+    .myaccount-pfp-section .myaccount-pfp-img { width: 14vw; }
+
+    .myaccount-editable-infos-box input, .myaccount-editable-infos-box select {
+        padding: 12px;
+        font-size: 0.8rem;
+    }
+    .myaccount-editable-infos-box select { margin: 0; }
+}
+
+/* Change My Password */
+
+.new-pwd-box span { 
+    font-size: 1.2em;
+    user-select: none;
+}
+
+.new-pwd-box span:hover { cursor: pointer; }
+
+
+/* Formations */
+
+.formation-informations-container .formation-informations-box {
+    margin: 10px;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 8px;
+    background-color: var(--back-color-my-account-module);
+    width: 100%;
+}
+
+.formation-informations-container .formation-informations-box .formation-row-information input {
+    width: 25vw;
+}
+
+.formation-informations-container .formation-informations-box .description-input {
+    width: 100%; 
+}
+
+
+.formation-info-box {
+    text-align: center; 
+}
+
+.formation-info-box { margin: 8px; }
+
+
+.formation-row-information{
+    display: flex;
+    justify-content: space-around;
+}
+
+.myaccount-editable-infos-box input, .formation-info-box input {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+#createFormationButtonAction {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#createFormationButtonAction:hover {
+    cursor: pointer;
+    background-color: #A1C6EA;
+}
+
+.add-formation-button-container {
+    margin-top: 20px;
+}
+
+/* WEB CHAT */
+.my-message {
+    /*background-color: pink;*/
+    text-align: right;
+    margin-left: auto;
+}
+
+
+.other-message{
+   /*background-color: lightblue;*/
+    text-align: left;
+    margin-right: auto;
+}
+
+
+.message-box {
+    word-wrap: break-word;
+    text-align: left;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    max-width: 75%;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+
+.webchat-container {
+    display: flex;
+    flex-direction: column; 
+    max-height: 75vh;
+    overflow-y: auto;
+    border-radius: 8px;
+}
+
+#WebchatMessagesContainer {
+    flex: 1; 
+    overflow-y: auto; /* Ajoute un défilement vertical si nécessaire */
+    padding: 10px;
+    margin-bottom: 25px; /* Ajoute une marge basse pour éviter de cacher le dernier message sous le conteneur de saisie */
+}
+
+
+.webchat-module-container {
+    background-color: white ;
+    border-radius: 8px;
+}
+
+.webchat-module-head {
+    background-color: #0D1A30 ;
+    color: white;
+    height: 50px;
+    border-radius: 8px 8px 0 0;
+}
+
+.message-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.message-info {
+    color: #777;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+
+}
+
+.message-text-container {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.my-message .message-text-container {
+    background-color: lightblue;
+    color: black;
+}
+
+.other-message .message-text-container {
+    background-color: #5786a0;
+    color: white;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.message-datetime {
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+
+.delete-button {
+    font-size: 12px; 
+    padding: 3px 8px;
+    margin-left: auto;
+    margin-top: 5px;
+    background-color: lightgray;
+    color: #fff; 
+    border: none; 
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#message-input-container {
+    bottom: 0; 
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: 0px;
+    height: 60px;
+    width: 100%;
+}
+
+#message-file,
+#message-text {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    width: auto; /* Définissez la largeur sur auto pour qu'ils s'étirent pour remplir l'espace restant */
+}
+
+#message-file {
+    cursor: pointer; /* Changez le curseur pour indiquer que le champ de fichier est cliquable */
+}
+
+#message-text::placeholder {
+    color: #999; /* Changez la couleur du texte d'espace réservé pour indiquer que c'est un champ de saisie */
+}
+
+.button-send {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+}
+
+.button-send:hover {
+    background-color: #0056b3; /* Changez la couleur de fond lors du survol */
+}
+
+.collect-modify-info-section {
+    text-align: center; /* Pour centrer le contenu horizontalement */
+}
+
+.collect-modify-info-section { margin: 8px; }
+
+.collect-modify-info-section select {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}

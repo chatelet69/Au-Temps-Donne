@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefWidth="200.0" minHeight="520.0" styleClass="menu-container" xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.autempsdonne.ticketdesktopapp.viewsControllers.MenuController">
+
+    <stylesheets>
+        <URL value="@css/menu.css"/>
+    </stylesheets>
+
+    <VBox prefWidth="200.0" alignment="CENTER">
+        <Label text="Dashboard Panel" />
+        <ImageView fx:id="imageLogoMenu" fitWidth="100.0" fitHeight="100.0" />
+    </VBox>
+
+    <VBox prefWidth="200.0" alignment="CENTER" AnchorPane.topAnchor="150.0" spacing="5.0">
+        <Button mnemonicParsing="false" onAction="#switchModuleView" styleClass="menu-navigation-button"
+                text="Dashboard" textAlignment="CENTER" userData="dashboard-view"/>
+        <Button mnemonicParsing="false" onAction="#goToBackOfficeButtonClicked" styleClass="menu-navigation-button"
+                text="Aller sur le Back-office" userData="go-website"/>
+        <Button mnemonicParsing="false" onAction="#switchModuleView" styleClass="menu-navigation-button"
+                text="Paramètres" userData="parameters-view"/>
+    </VBox>
+
+    <AnchorPane styleClass="menu-profile-box" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.bottomAnchor="0.0">
+        <Label fx:id="menuUsernameText" text="NoName" AnchorPane.leftAnchor="0.0"/>
+        <MenuButton mnemonicParsing="false" text="Options" AnchorPane.rightAnchor="0.0">
+            <items>
+                <MenuItem onAction="#onLogoutButtonClick" mnemonicParsing="false" styleClass="logout-buton" text="Se déconnecter"/>
+                <MenuItem mnemonicParsing="false"  onAction="#switchModuleView" userData="parameters-view" text="Paramètres"/>
+            </items>
+        </MenuButton>
+    </AnchorPane>
+</AnchorPane>

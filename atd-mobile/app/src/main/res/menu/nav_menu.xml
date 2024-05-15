@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/nav_stock"
+            android:icon="@drawable/baseline_qr_code_scanner_24"
+            android:title="@string/stock"/>
+        <item
+            android:id="@+id/nav_harvest"
+            android:icon="@drawable/barcode_scanner"
+            android:title="@string/harvest"/>
+        <item
+            android:id="@+id/nav_oldpeople"
+            android:icon="@drawable/elderly"
+            android:title="@string/ederly"/>
+    </group>
+    <item
+        android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="@string/logout"/>
+        </menu>
+    </item>
+</menu>

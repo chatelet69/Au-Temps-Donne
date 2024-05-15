@@ -1,0 +1,349 @@
+.loginPageContainer{
+    background-color: #507DBC;
+}
+.separatorContainer{
+    height: 76vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.formLogin{
+    display: flex;
+    flex-direction: column;
+    align-items: flex;
+    justify-content: center;
+}
+.loginTitles{
+    color: #507DBC;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-bottom: 2vw;
+}
+label{
+    font-family: "Akshar", sans-serif;
+}
+.formLogin input{
+    width: 20vw;
+    height: 2vw;
+    font-size: 16px;
+    border: none;
+    border-bottom: #507DBC 1px solid;
+    margin-bottom: 1vw;
+    border-radius: 4px;
+}
+.formLogin input:focus{
+    outline: #507DBC 2px solid;
+}
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1vw;
+    width: 33%;
+    height: 50%;
+    border-radius: 8px;
+}
+.sendBtnForm{
+    height: 2vw;
+    color: #507DBC;
+    border: #507DBC 2px solid !important;
+    border-radius: 80px !important;
+    transition: 0.5s;
+}
+.sendBtnForm:hover{
+    color: white;
+    background-color: #507DBC;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.registerList{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 1vw;
+    width: 33%;
+    height: 50%;
+    border-radius: 8px;    
+}
+.register-links{
+    margin-bottom: 1vw;
+}
+.register-links:hover{
+    text-decoration: underline;
+}
+
+.links-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+.input-error{
+    border: red 1px solid !important;
+}
+.input-error:hover{
+    outline: red 1px solid !important;
+}
+.input-error:focus{
+    outline: red 1px solid !important;
+}
+.input-valid{
+    border: lightgreen 1px solid !important;
+}
+.input-valid:hover{
+    outline: lightgreen 1px solid !important;
+}
+.input-valid:focus{
+    outline: lightgreen 1px solid !important;
+}
+#errorMsg{
+    color: red;
+    text-align: center;
+    font-size: 16px;
+}
+.titleSignIn{
+    padding-top: 2.5vw;
+    padding-bottom: 2.5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0D1A30;
+}
+.titleSignIn h1{
+    color: white;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 48px;
+}
+.titleSignIn p{
+    color: white;
+    font-family: "Akshar", sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin-top: 1vw;
+}
+.stepsSignIn{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.stepsSignIn div{
+    border-radius: 4px;
+    padding: 1vw;
+    margin-right: 1vw;
+}
+.actualStepSignIn{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #507DBC;
+}
+.futurStepSignIn{
+    background-color: #0D1A30;
+}
+.stepsSignIn div p{
+    color: white;
+}
+.inputListSignIn{
+    margin-top: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.signInInputContainer{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-bottom: 1vw;
+}
+.signInInputs{
+    width: 10vw;
+    height: 2vw;
+    font-size: 16px;
+    border: none;
+    border-bottom: #507DBC 1px solid;
+    margin-bottom: 1vw;
+    border-radius: 4px;
+}
+.signInInputs:focus{
+    outline: #507DBC 2px solid;
+}
+.containerListsSignIn{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.required:after {
+    content:" *";
+    color: red;
+  }
+.required-before:before{
+    content:"*";
+    color: red;
+}
+.signInNext{
+    position: absolute;
+    bottom: 3vw;
+    width: 10vw !important;
+}
+.signInNextErrorMsg{
+    position: absolute;
+    bottom: 1.5vw;
+}
+.absoluteDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.textAreaSignInBeneficiary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.containerFileSignInBeneficiary{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 1vw;
+}
+.uploadFilesContainer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 30vw;
+    background-color: #507DBC;
+    padding: 1vw;
+    border-radius: 4px;
+}
+.fileSignIn{
+    display: none;
+}
+.fileContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.rowContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.uploadFilesContainer h2{
+    text-align: center;
+    width: 100%;
+    color: white;
+    margin-bottom: 1vw;
+}
+.fileContainer p, .fileContainer span{
+    cursor: pointer;
+    font-weight: 200;
+    color: white;
+}
+.fileContainer span{
+    font-size: 32px;
+}
+.sendApplicationBtn{
+    width: 10vw;
+}
+.btnContainer{
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.volunteerNext{
+    margin-top: 1vw;
+    width: 10vw;
+}
+.signInVolunteerNextErrorMsg{
+    position: absolute;
+    bottom: 8px;
+}
+.dispoType, .timeByWeeks{
+    margin-top: 2vw;
+    margin-left: 5vw;
+}
+.dispoTypeContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.dispoTypeContainer div{
+    margin-right: 2vw;
+}
+.dispoType p, .timeByWeeks p{
+margin-bottom: 1vw;
+}
+.timeByWeeks{
+    margin-bottom: 2vw;
+}
+.btnContainerVolunteer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vw;
+}
+.selectContainer{
+    margin-left: 5vw;
+}
+.radioCheckInput{
+    margin-right: 1vw;
+}
+.textAreaSignIn{
+    min-width: 40vw;
+    max-width: 40vw;
+    min-height: 10vw;
+    max-height: 10vw;
+}
+.containerFileSignInVolunteer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 2vw;
+}
+.textForFilesVolunteer{
+    text-align: center;
+    margin-top: 1vw;
+}
+.containerUploadFilesContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+}
+.separation{
+    margin-top: 1vw;
+    margin-left: 5vw;
+}
+.rgpdText{
+    margin-top: 1vw;
+    width: 90vw;
+    font-size: 12px;
+}
+.red{
+    color: red;
+}

@@ -1,0 +1,273 @@
+.module-popup-access-datail-stock {
+    position: fixed;
+    top: 50%;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 75%;
+}
+.module-popup {
+    position: fixed;
+    top: 50%;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 30%;
+}
+
+/* Collect Create popup */
+
+.collects-create-inputs-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.module-popup-access-datail-stock h3 {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: larger;
+}
+.module-popup h3 {
+    text-align: center;
+    margin-bottom: 2vh;
+    font-size: larger;
+}
+
+.module-popup-access-datail-stock h6 {
+    font-size: small;
+    font-weight: 500;
+}
+.module-popup h6 {
+    font-size: small;
+    font-weight: 500;
+}
+
+
+.collect-option-add-button {
+    background-color: #A1C6EA;;
+    padding: 10px;
+    color: black;
+    max-width: 16vw;
+    margin-bottom: 4px;
+    transition: all 0.3s ease-in-out;
+}
+
+.collect-option-content-container {
+    border: 2px solid #0D1A30;
+    border-radius: 8px;
+    max-height: 18vh;
+    padding: 8px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.module-popup button {
+    margin-top: 1vh;
+}
+.module-popup button {
+    margin-top: 1vh;
+}
+
+.address {
+    margin-bottom: 2%;
+}
+
+/* Events Modify popup */
+
+#partnersContainer > div {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 10px; 
+}
+
+#partnersContainer select {
+    flex: 1;
+}
+
+
+.popup-buttons-box, #accessUserPopupButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-buttons-box { flex-direction: row; }
+
+.popup-buttons-box div {
+    display: flex;
+    width: 60%;
+    flex-direction: row;
+}
+
+.popup-buttons-box button, .myaccount-buttons-container button {
+    margin: 6px;
+    transition: all 0.4s ease-in-out;
+    padding: 10px;
+    width: 50%;
+    text-transform: uppercase;
+    color: white;
+}
+
+.popup-buttons-box button:hover { cursor: pointer; }
+
+.confirm-button {
+    background-color: #0D1A30;
+    padding: 12px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.button-modify {
+    background-color: #0D1A30;
+    padding: 12px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.button-detailCollect {
+    background-color: #0D1A30;
+    padding: 12px;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+}
+
+.cancel-button {
+    background-color: gray;
+}
+
+.detailCollect h2{
+    font-family: 'Bebas neue', sans-serif;
+    font-size: 32px;
+}
+
+.event-informations-container .event-informations-box {
+    margin: 10px;
+    padding: 12px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 3px 8px;
+    background-color: var(--back-color-my-account-module);
+    width: 50%;
+}
+.event-informations-section { justify-content: start; }
+
+.event-info-box input {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    box-sizing: border-box; 
+}
+
+#eventIdBadValue { text-align: center; }
+
+
+.event-info-box { margin: 8px; }
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px; 
+}
+
+.event-info-box {
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: flex-end; 
+    margin-top: 20px; 
+}
+
+.button-container button {
+    margin-left: 10px; 
+}
+
+.addresses-container {
+    max-height: 200px; 
+    overflow-y: auto; 
+}
+
+#createNewCollectButtonAction {
+    padding: 12px;
+    background-color: #0D1A30;
+    border: none;
+    color: white;
+    border-radius: 6px;
+    margin: 4px;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.collect-modify-info-section {
+    text-align: center; /* Pour centrer le contenu horizontalement */
+}
+
+.collect-modify-info-section { margin: 8px; }
+
+.collect-modify-info-section input {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+
+.collects-create-inputs-container input, .collects-create-inputs-container select {
+    padding: 8px;
+    background-color: rgba(237, 237, 237, 0.741);
+    border-radius: 4px;
+    border: 1px solid rgb(190, 190, 190);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.collects-create-inputs-container {
+    text-align: center; /* Pour centrer le contenu horizontalement */
+}
+
+.collects-create-inputs-container { margin: 8px; }
+
+#map {
+    height: 50vh;
+    width: 35vw;
+    margin-right: 50px;
+}

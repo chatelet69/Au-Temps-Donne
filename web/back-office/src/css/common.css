@@ -1,0 +1,202 @@
+/* Global */
+/* Common to modules */
+
+.module-head { color: var(--text-color-back-modules); }
+.module-head h2, .module-head h3 { text-align: center; }
+
+button:hover {
+    cursor: pointer;
+}
+
+.access-button {
+    border: 1px solid #A1C6EA;
+    border-radius: 4px;
+    background-color: #A1C6EA;
+    padding: 8px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    transition: all 0.5s ease-in-out;
+}
+
+.access-button:hover {
+    cursor: pointer;
+    border-color: #0D1A30;
+    background-color: var(--back-color-global-planning-container);
+}
+
+.module-container-bg { 
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 12px;
+}
+
+.text-center { text-align: center; }
+.hover-pointer { cursor: pointer; }
+
+.flexbox-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flexbox-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.justify-center { justify-content: center; }
+.justify-start { justify-content: start; }
+.justify-around { justify-content: space-around; }
+.justify-between { justify-content: space-between; } /* Pour un espacement équivalent entre les éléments */
+.align-center { align-items: center; }
+.justify-end { justify-content: end; }
+
+#map {
+    height: 50vh;
+    width: 35vw;
+}
+
+/* Texts */
+
+.missing-values-text {
+    display: none;
+    text-align: center; 
+    color: #dc143c;
+}
+
+.input-data-missing { border: 1px solid red !important; }
+
+.error-text { color: var(--grey-light-red-color); }
+
+::-moz-selection /* For Firefox */, ::selection {
+    color: rgb(255, 255, 255);
+    background: rgb(121, 165, 220);
+}
+
+/* Buttons */
+
+.cancel-button { background-color: rgb(152, 149, 171); }
+
+.edit-password-button { background-color: var(--background-color-hover-button); }
+
+.edit-planning-button { background-color: rgb(183, 182, 182); }
+
+.confirm-button { background-color: #65ce70; }
+
+.close-button { background-color: rgb(100, 118, 141); }
+
+.delete-button { background-color: var(--grey-light-red-color); }
+
+.edit-button { background-color: rgb(95, 93, 83); }
+
+.cancel-button:hover { background-color: rgb(90, 88, 103); }
+.confirm-button:hover { background-color: #509e57; }
+.delete-button:hover { background-color: rgb(242, 12, 12); }
+.edit-button:hover, .edit-planning-button:hover { background-color: rgb(167, 166, 166); }
+.edit-password-button:hover { background-color: var(--back-color-edit-password-hover); }
+.close-button:hover { background-color: rgb(66, 77, 92); }
+
+/* Planning Calendar */
+
+.planning-calendar {
+    background-color: var(--back-color-global-planning-container);
+    overflow-x: auto;
+    border-radius: 6px;
+    border: 1px solid gray;
+}
+
+/* Icons Spans */
+
+.arrow-go_back {
+    user-select: none;
+}
+
+/* Dashboard */
+
+.back-office-body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--back-office-background-color);
+}
+
+.dashboard-main-section {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-main-section #main-container {
+    border: none;
+    height: 75vh;
+    width: 100%;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+/* Scrollbar */
+
+.scrollbar-thin-dark-blue {
+    scrollbar-color: #3e6a85 rgb(228, 228, 228);
+    scrollbar-width: thin;
+}
+
+/* Size / Margin / Padding */
+
+.margin-left-auto {
+    margin-left: auto !important;
+}
+
+.mt-1 { margin-top: 1vh; }
+
+.p-1 { padding: 1vw !important }
+.p-2 { padding: 2vw !important;}
+
+.mh-5-vh { max-height: 5vh; }
+
+/* Grid */
+
+.gridjs-footer, .gridjs-tbody, .gridjs-th, 
+td.gridjs-td, .gridjs-input, .gridjs-search-input {
+    background-color: var(--grid-bg-color) !important;
+}
+
+.gridjs-summary, .gridjs-tbody, .gridjs-input, .gridjs-search-input {
+    color: var(--text-color-back-modules) !important;
+}
+
+@media only screen and (max-height: 668px) {
+    .gridjs-table .gridjs-thead, .gridjs-tbody, .gridjs *, .gridjs ::after, .gridjs ::before {
+        overflow-x: auto;
+        max-width: 90vw;
+    }
+}
+
+/* Popup */
+
+#PopupLoadingGif {
+    width: 3vw;
+}
+
+.module-popup {
+    position: fixed;
+    top: 50%;
+    z-index: 9;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@media only screen and (max-height: 668px) {
+    .module-popup {
+        max-width: 90vw;
+        max-height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+.sync-icon {
+    margin-bottom: 2vh;
+    animation: rotate-icon 2s linear infinite;
+}

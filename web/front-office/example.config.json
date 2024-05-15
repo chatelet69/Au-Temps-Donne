@@ -1,0 +1,5 @@
+{
+    "baseUrl": "http://localhost:8081/",
+    "minioBaseUrl": "https://minio.domain.lol/",
+    "stripePublicKey": "key"
+}

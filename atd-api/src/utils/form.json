@@ -1,0 +1,221 @@
+{
+    "ranks": {
+        "superadmin": 9,
+        "admin": 8,
+        "place_manager": 5,
+        "volunteer": 4,
+        "partner": 3,
+        "beneficiary": 2,
+        "user": 1,
+        "banned": 0
+    },
+    "requiredAndAuthorizedUserData": [
+        "gender",
+        "lastname",
+        "name",
+        "birthday",
+        "email",
+        "username",
+        "address",
+        "phone",
+        "situation",
+        "password",
+        "work_place",
+        "newsletter"
+    ],
+    "requiredBeneficiariesData": [
+        "gender",
+        "lastname",
+        "name",
+        "birthday",
+        "username",
+        "situation",
+        "password"
+    ],
+    "authorizedBeneficiariesData": [
+        "gender",
+        "lastname",
+        "name",
+        "birthday",
+        "email",
+        "username",
+        "address",
+        "phone",
+        "situation",
+        "password"
+    ],
+    "authorizedLicenses": [
+        "car_license",
+        "truck_license",
+        "bike_license"
+    ],
+    "authorizedApplicationData": [
+        "cv",
+        "motivation_letter",
+        "remarks",
+        "knowledges",
+        "criminal_record",
+        "disponibility_type",
+        "disponibility_days"
+    ],
+    "requiredApplicationData": [
+        "cv",
+        "criminal_record",
+        "knowledges",
+        "disponibility_type",
+        "disponibility_days"
+    ],
+    "requiredBeneficiaryApplicationData": [
+        "payslip",
+        "reason_application"
+    ],
+    "authorizedBeneficiaryApplicationData": [
+        "situation_proof",
+        "debts_proof",
+        "home_proof",
+        "payslip",
+        "reason_application"
+    ],
+    "imageMimetypeAuthorized": [
+        "image/png",
+        "image/jpeg",
+        "image/jpg",
+        "jpg",
+        "png",
+        "jpeg"
+    ],
+    "beneficiariesMimetypeAuthorized": [
+        "image/png",
+        "image/jpeg",
+        "image/jpg",
+        "application/pdf",
+        "pdf",
+        "jpg",
+        "png",
+        "jpeg"
+    ],
+    "errorDuringDelete": "Erreur durant la suppression",
+    "errorDuringGet": "Erreur durant la récupération",
+    "errorDuringPost": "Erreur durant l'ajout",
+    "errorDuringPatch": "Erreur durant la modification",
+    "messageOnly": 1,
+    "messageAndFile": 2,
+    "fileOnly": 3,
+    "imageMaxSize": 3,
+    "messageTypes": {
+        "text": 1,
+        "file": 2
+    },
+    "cvAndMotivLettersMimetypeAuthorized": [
+        "image/png",
+        "image/jpeg",
+        "image/jpg",
+        "application/pdf",
+        "jpg",
+        "png",
+        "jpeg",
+        "pdf"
+    ],
+    "authorizedLanguages": [
+        ["BG", "Bulgarian"],
+        ["CS", "Czech"],
+        ["DA", "Danish"],
+        ["DE", "German"],
+        ["EL", "Greek"],
+        ["EN", "English"],
+        ["ES", "Spanish"],
+        ["ET", "Estonian"],
+        ["FI", "Finnish"],
+        ["FR", "French"],
+        ["HU", "Hungarian"],
+        ["IT", "Italian"],
+        ["JA", "Japanese"],
+        ["LT", "Lithuanian"],
+        ["LV", "Latvian"],
+        ["NL", "Dutch"],
+        ["PL", "Polish"],
+        ["PT", "Portuguese"],
+        ["RO", "Romanian"],
+        ["RU", "Russian"],
+        ["SK", "Slovak"],
+        ["SL", "Slovenian"],
+        ["SV", "Swedish"],
+        ["ZH", "Chinese"]
+    ],
+    "errorAddDispo": "Erreur durant l'ajout de la disponibilité",
+    "tooHighLengthString": "Contenu du message dépassant la limite",
+    "errorGetDisposOfDay": "Erreur durant la récupération des disponibilités du jour",
+    "createApplicationError": "Erreur durant l'envoi de votre candidature",
+    "acceptApplicationError": "Erreur durant la validation de la candidature",
+    "volunteerApplicationError": "Erreur, cette candidature n'existe pas ou vous ne pouvez pas/plus agir sur celle ci",
+    "refuseApplicationError": "Erreur durant le refus de la candidature",
+    "updateApplicationError": "Erreur durant la modification de la candidature",
+    "authorizedFilterUsersView": ["all", "beneficiary", "volunteers", "users"],
+    "filtersViewRank": {
+        "all": " >= 0",
+        "users": " = 1",
+        "beneficiary": " = 2",
+        "volunteers": " >= 3"
+    },
+    "missingOrBadData": "Données manquantes ou incorrectes",
+    "userEditKeys": [
+        "username", "email", "name", "lastname", "situation",
+        "newsletter", "notifications", "birthday",
+        "phone", "rank", "address", "gender", "password", "newPassword"
+    ],
+    "errorDuringCreatingEvent": "Erreur durant la création de l'évènement (Données invalides ou manquantes)",
+    "missingPerms": "Permissions manquantes",
+    "requiredEventKeys": [
+        "event_type", "title", "start_datetime",
+        "end_datetime", "responsable",
+        "place", "description"
+    ],
+    "authorizedEventKeys": [
+        "event_type", "title", "start_datetime",
+        "end_datetime", "responsable", "waypoints",
+        "place", "description", "contributors", "trajects"
+    ],
+    "typeStock" : [
+        "Food",
+        "Drink"
+    ],
+    "errorEditPlanning": "Erreur durant la modification du planning (Introuvable ou non modifiable)",
+    "categoryList" : [
+        "Viande",
+        "Poisson",
+        "Légumes",
+        "Fruits",
+        "Pain",
+        "Féculents",
+        "Conserves",
+        "Eau",
+        "Soda",
+        "Jus",
+        "Produits laitiers",
+        "Oeufs"
+    ],
+    "missingStockAmount": 50,
+    "limitLastStock": 5,
+    "planningFiltersKeys": [
+        "description", "startDate", "endDate", "activitity", "disponibility"
+    ],
+    "authorizedKeysSearchUser": [
+        "username", "min_rank", "max_rank", 
+        "name", "lastname", "rank"
+    ],
+    "errorDuringDeleteTicket": "Erreur durant la suppresion du ticket (Permissions manquantes ou ticket inexistant)",
+    "errorDuringAddNewTicketChat": "Erreur durant l'envoi du message (données incorrectes ou ticket inexistant)",
+    "ticketStatus": { "opened": 0, "closed": 1},
+    "errorDuringStatusTicket": "Erreur durant le changement de statut du ticket",
+    "errorDuringPostTicket": "Erreur durant la création du ticket",
+    "userNotFound": "Utilisateurs non trouvés",
+    "getEventsFilters": [
+        "all", "user_registered", "user_not_registered"
+    ],
+    "authorizedEditEventKeys": [
+        "event_type", "title", "start_datetime",
+        "end_datetime", "responsable", "place", "description"
+    ],
+    "eventElementStockStatus": {"delivered": "delivered", "pending": "pending"},
+    "eventPointKeys": ["address", "city", "zip_code"]
+}

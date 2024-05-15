@@ -1,0 +1,10 @@
+{
+  "name": "au-temps-donne",
+  "private": true,
+  "scripts": {
+    "full_start": "concurrently \"cd atd-api && npm start\" \"cd web/back-office && npm start\""
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  }
+}

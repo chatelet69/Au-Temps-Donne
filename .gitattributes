@@ -1,0 +1,6 @@
+*.jsx linguist-language=js
+*.js linguist-language=js
+*.json linguist-language=json
+*.css linguist-language=css
+*.html linguist-language=html
+*.sql linguist-detectable

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<?import javafx.scene.shape.Rectangle?>
+<HBox
+      prefWidth="200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox spacing="8.0">
+        <ImageView styleClass="user-pfp-image" fx:id="userPfpView" fitHeight="100.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true"/>
+        <VBox minHeight="50.0" minWidth="50.0" fx:id="ticketMessageBoxContainer">
+            <Label text="Label" fx:id="ticketMessageAuthorName" />
+        </VBox>
+    </HBox>
+
+</HBox>

@@ -1,0 +1,32 @@
+{
+    "authorizedLanguages": [
+        ["BG", "Bulgarian"],
+        ["CS", "Czech"],
+        ["DA", "Danish"],
+        ["DE", "German"],
+        ["EL", "Greek"],
+        ["EN-GB", "English (United Kingdom)"],
+        ["EN-US", "English (United States)"],
+        ["EN", "English"],
+        ["ES", "Spanish"],
+        ["ET", "Estonian"],
+        ["FI", "Finnish"],
+        ["FR", "French"],
+        ["HU", "Hungarian"],
+        ["IT", "Italian"],
+        ["JA", "Japanese"],
+        ["LT", "Lithuanian"],
+        ["LV", "Latvian"],
+        ["NL", "Dutch"],
+        ["PL", "Polish"],
+        ["PT-PT", "Portuguese (Portugal)"],
+        ["PT-BR", "Portuguese (Brazil)"],
+        ["PT", "Portuguese"],
+        ["RO", "Romanian"],
+        ["RU", "Russian"],
+        ["SK", "Slovak"],
+        ["SL", "Slovenian"],
+        ["SV", "Swedish"],
+        ["ZH", "Chinese"]
+    ]
+}

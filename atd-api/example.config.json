@@ -1,0 +1,23 @@
+{
+    "host": "host",
+    "user": "db_user",
+    "password": "db_password",
+    "database": "db_name",
+    "apiPort": 8081,
+    "secretJwt": "secretJWT",
+    "serverUrl": "server_URL",
+    "originUrl": [
+        "dev.example.com",
+        "https://dev.example.lol"
+    ],
+    "hostUrl": "domaine.com",
+    "baseUrl": "http://localhost:8081",
+    "sameSiteValue": "strict",
+    "secureValue": false,
+    "defaultBucketName": "bucket",
+    "databaseConnectionlimit": 15,
+    "maxAgeInHours": 336,
+    "stripePrivateKey": "",
+    "atdEmail": "mail@gmail.com",
+    "smtpServer": "smtp.gmail.com"
+}

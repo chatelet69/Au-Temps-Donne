@@ -1,0 +1,255 @@
+/* Top Header */
+
+.top-header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-color-back-modules);
+}
+
+#headerMenuTitle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+}
+
+#headerMenuTitleText {
+    margin: 0;
+    padding: 0;
+}
+
+#headerMenuTitleText h1 {
+    font-family: "Akshar", sans-serif;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+}
+
+#headerMenuTitleText h6 {
+    font-size: large;
+    margin: 0 0 10px 0;
+    font-family: "Satisfy", cursive;
+}
+
+.top-header-logo {
+    width: 5vw;
+    scale: 100%;
+    height: auto;
+}
+
+#headerMenuNav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#headerMenuNav a {
+    user-select: none;
+    text-decoration: none;
+    margin-right: 2vw;
+    transition: all 0.5s ease-in-out;
+    font-size: small;
+}
+
+#headerMenuNav a,
+#topMenuButton {
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: small;
+}
+
+.my-account-button {
+    color: black;
+    background-color: #A1C6EA;
+    border: 2px solid #A1C6EA;
+}
+
+.my-account-button:hover {
+    background-color: white;
+}
+
+#logoutButton {
+    background-color: #D03737;
+    color: white;
+    border: 2px solid #D03737;
+}
+
+#logoutButton:hover {
+    color: red;
+    background-color: white;
+}
+
+#topMenuButton {
+    display: none;
+    background-color: white;
+    border: 2px solid white;
+}
+
+#topMenuButton:hover {
+    cursor: pointer;
+    background-color: red;
+}
+
+.top-menu-buttons {
+    /*display: none;*/
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    margin-top: 5px;
+    text-align: center;
+    border-radius: 0px 8px 8px 8px;
+}
+
+.top-menu-dropdown:hover .top-menu-buttons {
+    display: block;
+}
+
+.top-menu-buttons {
+    color: black;
+}
+
+.top-menu-header-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    user-select: none;
+    margin-bottom: 14px;
+}
+
+@media only screen and (max-height: 668px) {
+    .top-header-logo {
+        width: 10vw;
+    }
+
+    #headerMenuTitleText h1,
+    #headerMenuTitleText h6 {
+        font-size: 2vh;
+    }
+
+    #topMenuButton {
+        display: block;
+    }
+
+    #headerMenuNav a,
+    #topMenuButton {
+        font-size: 1.5vh;
+        padding: 4px;
+    }
+}
+
+/* Side Header */
+
+.side-header {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 7vw;
+    max-width: 7vw;
+    background-color: var(--background-color-back-modules);
+    border-bottom-right-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 16px;
+}
+
+#sideHeaderHead {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 6px;
+}
+
+
+.side-header-pfp {
+    width: 3vw;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 5px;
+}
+
+#sideHeaderMenuNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.side-header-nav-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    user-select: none;
+    margin-bottom: 14px;
+}
+
+.side-header-nav-box:hover,
+.side-header-nav-box p:hover {
+    cursor: pointer;
+}
+
+.side-header-nav-box p {
+    color: white;
+    font-size: small;
+    margin-top: -4px;
+}
+
+#changeThemeButton {
+    margin-bottom: 2vh;
+    scale: 125%;
+}
+
+.change-theme-button:hover {
+    cursor: pointer;
+}
+
+.active-module-tab,
+.active-module-tab p {
+    color: #68bdf3 !important;
+    transition: all 0.4s ease-in-out;
+}
+
+.active-module-myaccount {
+    background-color: rgb(38, 91, 161);
+    border-color: rgb(38, 91, 161);
+    color: white;
+    transition: 0.4s ease-in-out;
+}
+
+.active-module-myaccount:hover {
+    color: black;
+}
+
+.active-module-tab,
+.active-module-myaccount {
+    transform: scale(115%);
+}
+
+@media only screen and (max-width: 1920px) {
+    .side-header-pfp {
+        width: 3.5vw;
+    }
+
+    #sideHeaderHead h6 {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-height: 668px) {
+    .side-header {
+        display: none !important;
+    }
+}

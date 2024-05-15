@@ -1,0 +1,6 @@
+FROM node:lts
+WORKDIR /usr/src/app
+COPY CHEMIN/HOTE/API .
+RUN npm install
+EXPOSE 8081
+CMD ["npm", "start"]

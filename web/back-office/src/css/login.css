@@ -1,0 +1,143 @@
+.login-body {
+    margin: 0;
+    padding: 0;
+    background-color: #507DBC;
+}
+
+#loginBoxContainer {
+    background-color: white;
+    padding: 2%;
+    max-width: 25vw;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.login-header-box h2 {
+    text-align: center;
+    font-family: "Akshar", sans-serif;
+    margin-top: 2vh;
+    margin-bottom: 1vh;
+}
+
+.login-header-box img {
+    width: 2vw;
+    margin: -8px;
+    scale: 200%;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form * {
+    margin-bottom: 1.5vh;
+    border-radius: 8px;
+}
+
+.login-form input,
+button {
+    border: none;
+    padding: 0.5vw;
+}
+
+.login-form input {
+    color: #646464;
+    width: 15vw;
+    padding: 10px;
+    background-color: #E6E6E6;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.login-form .login-button {
+    background-color: #A1C6E4;
+    color: black;
+    width: fit-content;
+    padding: 10px;
+    width: 10vw;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    transition: all 0.4s ease-in-out;
+}
+
+.forget-password-button {
+    background-color: transparent;
+    color: blue;
+    text-decoration: underline;
+}
+
+.login-form .login-button:hover {
+    background-color: rgb(83, 213, 154);
+}
+
+.login-form a {
+    text-align: center;
+}
+
+#loginFailed {
+    display: none;
+    color: red;
+}
+
+/* Forget password */
+
+.forget-password-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forget-password-box * {
+    margin-bottom: 2vh;
+}
+
+.forget-password-box input {
+    background-color: #FFFFFF;
+    border: 2px solid gray;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.forget-password-box h5 {
+    margin-top: 0;
+    font-family: "Akshar", sans-serif;
+    font-weight: normal;
+    font-size: medium;
+}
+
+/* Logout */
+
+.logout-body {
+    background-color: #507DBC;
+    text-align: center;
+}
+
+.Logout-page img {
+    width: 15vw;
+}
+
+.Logout-page h1 {
+    font-size: xx-large;
+}
+
+@media only screen and (max-width: 440px) {
+    #loginBoxContainer {
+        max-width: 80vw;
+        padding: 24px;
+    }
+
+    .login-header-box h2 { width: 60vw; }
+
+    .login-header-box img {
+        width: 6vw;
+        margin: -5px;
+    }
+
+    .login-form input, .login-form .login-button { width: 45vw; }
+}

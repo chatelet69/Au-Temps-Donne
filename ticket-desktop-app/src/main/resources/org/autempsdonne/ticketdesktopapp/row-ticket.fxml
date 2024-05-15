@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.shape.Rectangle?>
+<HBox xmlns="http://javafx.com/javafx"
+      xmlns:fx="http://javafx.com/fxml"
+      prefHeight="400.0" prefWidth="600.0">
+
+   <VBox>
+       <Label text="Titre" />
+       <Label fx:id="ticketBoxTitle" />
+   </VBox>
+
+    <VBox>
+        <Label text="Statut" />
+        <Label fx:id="ticketBoxStatus" />
+    </VBox>
+
+    <VBox>
+        <Label text="Priorité" />
+        <Label fx:id="ticketBoxDifficulty" />
+    </VBox>
+
+    <VBox>
+        <Label text="Catégorie" />
+        <Label fx:id="ticketBoxCategory" />
+    </VBox>
+
+    <VBox>
+        <Label text="Date" />
+        <Label fx:id="ticketBoxDate" />
+    </VBox>
+
+</HBox>

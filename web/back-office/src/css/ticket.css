@@ -1,0 +1,172 @@
+.ticketDetailBox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.webChatBox {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60vw;
+    height: 80vh;
+    padding: 1vw;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+}
+
+.ticketDetailInfoBox {
+    border-radius: 8px;
+    background-color: white;
+    width: 20vw;
+    height: 80vh;
+    padding: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.5) 1px 1px 10px;
+    overflow: auto;
+}
+
+.titleDetail {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.ticketDetailInfo {
+    margin-bottom: 32px;
+}
+
+.infoDetail {
+    text-align: center;
+    font-size: 16px;
+}
+
+.inputTextWebChat {
+    all: unset;
+    width: 90%;
+}
+
+.inputMessage {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 16px;
+    border-bottom: 3px solid #0D1A30;
+    width: 100%;
+}
+
+.inputMessageBox {
+    position: relative;
+    height: 10%;
+    width: 100%;
+}
+
+.btnDeleteTicket {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid red;
+    color: red;
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+}
+
+.btnBoxTicket {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.btnBoxTicket button {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.pdpWebChatAtd {
+    width: 48px;
+    height: 48px;
+    border-radius: 100%;
+}
+
+.messageBoxQuestion .pdpWebChatAtd {
+    margin-left: 16px;
+    margin-right: 4px;
+}
+
+.messageBoxRespons .pdpWebChatAtd {
+    margin-right: 16px;
+}
+
+.webChatMessagesBox {
+    height: 90%;
+    overflow-y: auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.webChatMessagesBox> :first-child {
+    margin-top: auto !important;
+}
+
+.messageArea {
+    width: 350px;
+}
+
+.messageAreaImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageBoxRespons,
+.messageBoxQuestion {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 16px;
+}
+
+.messageBoxQuestion {
+    flex-direction: row-reverse !important;
+    justify-content: flex-end !important;
+    align-items: flex-start;
+    align-self: flex-end;
+}
+
+.messageArea {
+    padding: 16px;
+    background-color: #0D1A30;
+    border-radius: 4px;
+    color: white;
+}
+
+.messageBoxQuestion .messageArea {
+    background-color: #A1C6EA;
+    color: black;
+}
+
+.errorMsg,
+.errorChatMsg {
+    color: red;
+    text-align: center;
+}
+
+.btnClosedTicket {
+    background-color: #D03737;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+}
+
+.messageArea img {
+    width: 300px;
+}

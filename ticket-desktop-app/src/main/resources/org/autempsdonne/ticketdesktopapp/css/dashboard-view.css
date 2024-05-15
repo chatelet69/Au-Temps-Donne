@@ -1,0 +1,75 @@
+.tickets-list-container {
+    /*-fx-border-color: black;*/
+    -fx-border-width: 2;
+    -fx-border-style: solid;
+    -fx-padding: 2px;
+}
+
+.hover-cursor {
+    -fx-cursor: hand;
+}
+
+.filter-button, .ticket-action-button {
+    -fx-padding: 4px;
+}
+
+.filter-button {
+    -fx-background-color: #A1C6EA;
+    -fx-background-radius: 5px;
+    -fx-border-style: hidden;
+    -fx-border-width: 0;
+}
+
+.ticket-difficulty-0 {
+    -fx-background-color: #98FB98;
+    -fx-stroke: #98FB98;
+    -fx-fill: #98FB98;
+}
+
+.ticket-difficulty-1 {
+    -fx-background-color: #79d2e6;
+    -fx-stroke: #79d2e6;
+    -fx-fill: #79d2e6;
+}
+
+.ticket-difficulty-2 {
+    -fx-background-color: #dfd880;
+    -fx-stroke: #dfd880;;
+    -fx-fill: #dfd880;
+}
+
+.ticket-difficulty-3 {
+    -fx-background-color: #ff6961;
+    -fx-stroke: #ff6961;
+    -fx-fill: #ff6961;
+}
+
+.welcome-user-text {
+    -fx-font: 20px Tahoma;
+}
+
+.ticket-list-element-box {
+    -fx-max-height: 50px;
+    -fx-pref-height: 50px;
+    -fx-pref-width: 575px;
+    -fx-padding: 15px;
+    -fx-border-style: hidden hidden solid hidden;
+    -fx-border-color: white;
+    -fx-border-width: 2px;
+    /*-fx-background-color: rgba(243, 243, 243, 0.94);*/
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 4, 0, 0, 0);
+}
+
+.ticket-action-button {
+    -fx-background-radius: 5px;
+    -fx-background-color: rgba(220, 220, 220, 0.91);
+    -fx-text-fill: black;
+    -fx-border-radius: 5px;
+    -fx-border-width: 0;
+    -fx-border-style: hidden;
+    -fx-border-color: rgba(220, 220, 220, 0.91);
+}
+
+.ticket-action-button:hover {
+    -fx-background-color: rgba(185, 185, 185, 0.91);
+}

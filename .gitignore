@@ -1,0 +1,12 @@
+.vscode
+.idea
+node_modules
+package-lock.json
+web/warehouse/package-lock.json
+db/data_prod/
+db/data_dev/
+nginx.conf
+default.conf
+ticket-desktop-app/out/artifacts/ticket_desktop_app_jar/ticket-desktop-app.jar
+*.jar
+ticket-desktop-app/dependency-reduced-pom.xml

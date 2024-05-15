@@ -1,0 +1,198 @@
+.pfp {
+  width: 128px;
+  border-radius: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nameLastname{
+    font-size: 32px;
+}
+.edit_square:hover{
+    opacity: 100%;
+    cursor: pointer;
+}
+.profilContainer{
+    margin-left: 10vw;
+    width: 100%;
+    margin-top: 10vh;
+}
+.profilCategories{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 12px;
+    margin-left: 8px;
+}
+.pfpNamesContainer{
+    margin-bottom: 3.5vh;
+}
+.profilCategories h2{
+    font-size: 24px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-right: 64px;
+    cursor: pointer;
+}
+.profilCategories h2:hover{
+    text-decoration: underline;
+}
+.underline{
+    text-decoration: underline;
+}
+.categoryDetails{
+    width: 80vw;
+    min-height: 30vh;
+    border-radius: 4px;
+    background-color: #D9D9D9;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.profilPageContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profilInfoContainer{
+    position: relative;
+    padding: 2vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.rowProfilContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.titleProfilInfo{
+    font-weight: bold;
+    color: black;
+}
+.valueProfilInfo{
+    word-break: break-all;
+    color: #727272;
+}
+.containerInfoProfil{
+    margin-left: 16px;
+    width: 30%;
+    margin-bottom: 32px;
+}
+.pointer{
+    cursor: pointer !important;
+}
+.editIcon{
+    position: absolute;
+    right: 16px;
+    top: 16px;
+}
+.none{
+    display: none !important;
+}
+.inputProfilInfo{
+    all: unset;
+    border-bottom: 1px solid black;
+    width: 100%;
+}
+.btnEditProfil{
+    border: none;
+    border-radius: 4px;
+    padding: 8px 16px 8px 16px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btnContainerEdit{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+.btnEditProfil:hover{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.5s;
+}
+.green{
+    background-color: lightgreen;
+}
+.red{
+    background-color: lightcoral;
+    color: black;
+}
+.redColor{
+    color: red;
+}
+.paramsContainer{
+    position: relative;
+    padding: 2vw;
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.paramsInfo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 32px;
+}
+.paramsCol{
+    height: 100%;
+    width: 50%;
+}
+.paramsInfo .titleProfilInfo{
+    margin-right: 50%;
+}
+.deleteAccount{
+    color: red;
+    margin-right: 8vw;
+}
+.deleteAccountPopUp{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30vw;
+    height: 20vh;
+    background-color: white;
+}
+#popUpDelete{
+    display: flex;
+    flex-direction: row;
+}
+#popUpDelete p{
+    margin-right: 2vw;
+}
+.no{
+    color: red;
+}
+.yes{
+    color: green;
+}
+.profileLogDonations{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-y: auto;
+    height: 30vh;
+}
+.logDonation{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 95%;
+    margin-top: 8px;
+    padding: 8px;
+    background-color: white;
+}
+.logDonation p{
+    margin-right: 16px;
+}

@@ -1,0 +1,9 @@
+FROM quay.io/minio/minio:latest
+
+RUN mkdir -p /certs
+
+COPY /chemin/vers/fullchain.pem /certs/public.crt
+COPY /chemin/vers/privkey.pem /certs/private.key
+
+# 443 for HTTPS (put 9001 for example if don't need)
+CMD ["server", "--console-address", ":443", "--certs-dir", "/certs"]

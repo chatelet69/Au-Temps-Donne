@@ -1,0 +1,32 @@
+.menu-container {
+    -fx-background-color: #507DBC;
+    -fx-text-fill: white;
+}
+
+.close-menu-button {
+    -fx-background-color: blue;
+}
+
+.logout-buton {
+    -fx-background-color: red;
+    -fx-padding: 8px;
+    -fx-text-fill: white;
+}
+
+.menu-navigation-button {
+    -fx-pref-width: 200.0;
+    -fx-background-color: transparent;
+}
+
+.menu-navigation-button:hover {
+    -fx-background-color: rgba(150, 150, 150, 0.5);
+}
+
+.menu-profile-box {
+    -fx-min-height: 40.0;
+    -fx-background-color: #0D1A30;
+}
+
+.menu-profile-box Label {
+    -fx-text-fill: white;
+}

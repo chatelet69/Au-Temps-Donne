@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.ImageView?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.autempsdonne.ticketdesktopapp.viewsControllers.ErrorViewController">
+
+    <HBox alignment="CENTER" AnchorPane.topAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <ImageView fx:id="errorViewImageLogo" fitWidth="150.0" fitHeight="150.0" AnchorPane.topAnchor="0.0"
+                   AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"/>
+    </HBox>
+
+    <Label alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" contentDisplay="TOP" layoutX="166.0" layoutY="169.0" text="Accès au logiciel impossible !"
+           textAlignment="CENTER" textFill="#b53131">
+        <font>
+         <Font size="21.0"/>
+        </font>
+        <effect>
+         <Glow/>
+        </effect>
+    </Label>
+    <Label alignment="CENTER" AnchorPane.rightAnchor="0.0" AnchorPane.leftAnchor="0.0" layoutX="145.0" layoutY="219.0" text="Connexion instable ou API indisponible"
+           textAlignment="CENTER">
+        <font>
+         <Font size="18.0"/>
+        </font>
+    </Label>
+
+    <VBox AnchorPane.leftAnchor="0.0" alignment="CENTER" AnchorPane.rightAnchor="0.0" layoutY="250">
+        <Button onAction="#tryReconnectToApp" text="Se reconnecter" />
+    </VBox>
+
+</AnchorPane>

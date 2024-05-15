@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HarvestFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/black"
+                android:text="@string/act_on_the_food_harvest"
+                android:fontFamily="@font/bebas_neue_regular"
+                android:textSize="24dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/are_you_collecting_the_products_or_storing_them"
+                android:textAlignment="center"
+                android:maxWidth="300dp"
+                android:layout_marginBottom="64dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+
+            <LinearLayout
+                android:id="@+id/btnGetProduct"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginEnd="50dp"
+                android:background="@drawable/border_choice"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/barcode_scanner" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_m_collecting"
+                    android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:id="@+id/btnReceptProduct"
+                android:gravity="center"
+                android:background="@drawable/border_choice">
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/baseline_qr_code_scanner_24" />
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/i_m_storing"
+                    android:textAlignment="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.text.Text?>
+<VBox xmlns="http://javafx.com/javafx"
+      alignment="TOP_CENTER"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="org.autempsdonne.ticketdesktopapp.viewsControllers.LoginViewController">
+
+    <padding>
+        <Insets top="25.0"/>
+    </padding>
+    <Label text="Bienvenue sur l'application de ticketing" fx:id="welcomeToLoginView"/>
+
+    <VBox alignment="CENTER" spacing="4.0">
+        <padding>
+            <Insets top="25.0"/>
+        </padding>
+        <Label text="Pseudo ou email"/>
+        <TextArea fx:id="usernameInput" maxHeight="0.25" maxWidth="200" />
+        <Label text="Mot de passe"/>
+        <PasswordField fx:id="passwordInput" maxHeight="0.25" maxWidth="200" />
+    </VBox>
+
+    <HBox alignment="TOP_CENTER" spacing="5.0">
+        <padding>
+            <Insets top="20.0"/>
+        </padding>
+        <Button text="Mot de passe oublié!" fx:id="onForgetPasswordButtonClick"/>
+        <Button text="Se connecter" onAction="#onLoginButtonClick"/>
+    </HBox>
+
+    <Label fx:id="onLoginFailedText" />
+</VBox>

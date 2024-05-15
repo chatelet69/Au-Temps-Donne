@@ -1,0 +1,31 @@
+.lightMode, .darkMode { 
+    transition: all 0.2s ease-in-out;
+    --grey-light-red-color: rgb(218, 109, 109);
+}
+
+.lightMode {
+    --text-color-back-modules: black;
+    --back-office-background-color: #D9D9D9;
+    --background-color-back-modules: #0D1A30;
+    --background-color-hover-button: #A1C6EA;
+    --back-color-global-planning-container: #ffffff;
+    --grid-bg-color: #fff;
+    --back-color-my-account-module: #fff;
+    --text-my-account-font-weight: bold;
+    --back-color-my-account-files: rgb(244, 244, 244);
+    --back-color-edit-password-hover: gray;
+    --back-color-my-account-buttons: #1A1F29;
+}
+
+.darkMode {
+    --text-color-back-modules: white;
+    --back-office-background-color: #1A1F29;
+    --background-color-back-modules: #0F3542;
+    --back-color-global-planning-container: #0F3542;
+    --grid-bg-color: #0F3542;
+    --back-color-my-account-module: #0F3542;
+    --text-my-account-font-weight: normal;
+    --back-color-my-account-files: #1A1F29;
+    --back-color-edit-password-hover: gray;
+    --back-color-my-account-buttons: #1A1F29;
+}

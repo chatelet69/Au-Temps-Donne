@@ -1,0 +1,21 @@
+{
+    "typeStock" : [
+        "Food",
+        "Drink"
+    ],
+    "categoryList" : [
+        "Viande",
+        "Poisson",
+        "Légumes",
+        "Fruits",
+        "Pain",
+        "Féculents",
+        "Conserves",
+        "Eau",
+        "Soda",
+        "Jus",
+        "Produits laitiers",
+        "Oeufs",
+        "Autre"
+    ]
+}

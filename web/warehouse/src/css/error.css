@@ -1,0 +1,28 @@
+.errors{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #507DBC;
+    min-height: 100vh;
+}
+.errors h1{
+    font-weight: bold;
+    color: white;
+    font-size: 48px;
+    margin-bottom: 1vw;
+}
+.errors img{
+    width: 10vw;
+}
+.errors p{
+    color: white;
+    font-size: 24px;
+    margin-bottom: 1vw;
+}
+.link-error{
+    color: white;
+}
+.link-error:hover{
+    text-decoration: underline;
+}
